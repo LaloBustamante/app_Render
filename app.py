@@ -1,13 +1,12 @@
 import scipy.stats as stats
 import streamlit as st
 import time
-import pandas as pd
 
 st.header('Lanzar una moneda')
 
 chart = st.line_chart([0.5])
 
-def toss_coin(n): 
+def toss_coin(n):
     # Función que emula el lanzamiento de una moneda
     trial_outcomes = stats.bernoulli.rvs(p=0.5, size=n)
 
