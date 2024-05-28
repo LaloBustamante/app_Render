@@ -1,6 +1,7 @@
-from scipy import stats
+import scipy.stats as stats
 import streamlit as st
 import time
+import pandas as pd
 
 st.header('Lanzar una moneda')
 
